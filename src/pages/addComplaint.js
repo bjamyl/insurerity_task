@@ -36,7 +36,11 @@ export default function AddNewComplaint() {
     };
 
     axios
-      .post("https://test-demo-gql-backend.herokuapp.com/api/rest/data", values, axiosConfig)
+      .post(
+        "https://test-demo-gql-backend.herokuapp.com/api/rest/data",
+        complain,
+        axiosConfig
+      )
       .then((res) => {
         console.log("RESPONSE RECEIVED: ", res);
       })
